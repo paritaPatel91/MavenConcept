@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Amazon shop online">
+    <test name="My Demo Test">
+        <classes>
+            <class name="com.test.TestClass1"></class>
+           <class name="com.test.TestClass2"></class>
+        </classes>
+
+    </test>
+
+    <test name="my all classes from packes">
+        <packages>
+            <package name="com.test"></package>
+        </packages>
+
+    </test>
+</suite>

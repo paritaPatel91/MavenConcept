@@ -1,0 +1,44 @@
+Url to Get All dependencies and plugins :: https://mvnrepository.com
+serch over there for any depen we are loking for.
+
+--> In maven internally it will create folder which is known as .m2 folder.
+--> In this folder all the dependancies or jar files will be store here.
+
+--> maven life cycle ::
+lifecycle of maven :1. maven compile 2. maven test 3. maven resources-jar
+
+1) init
+2) compile
+3)scope
+4)Run
+5)End
+All this happen throgh plugins
+
+-->Plugins::
+1)Compiler plugin
+2)Surefile plugin
+
+-->Alway use latest version of dependancy and plugins ,it might have fix some issue and added new features to it.
+
+-->what is maven?
+Ans: maven is build automation tool only and only for java.
+it is used to create build in the form of jar file or war file, it's having own life cycle to execute testcases
+and compile code and generate artifact in the form of jar file or war file.it's complete build automation tool.
+we have another tool like Gradle and Ant which are also java base automation tool.
+
+--> pom.xml is a file.
+
+-->src/main/resources::
+we can have config.properties
+xml files
+.txt files
+
+--> we can have same with src/test/resources
+
+--> src/test/it
+means integration testing
+in automation we are not using this on
+
+--> war file:web application resources
+-->Jar : Java ARchive
+

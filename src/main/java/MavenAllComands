@@ -1,0 +1,54 @@
+1) Topic::
+--> mvn clean install ::use when To change the version of dependancy and build the project again from the scratch.
+-----------------------------------------------------------------------------------------------------
+--> It will dowload jar file and build the project.
+
+-->In short to build the project we need to run this command, if any testcase is fail over there,
+it will fail the build,and shows all testcases.
+
+--> In maven testcases should be in the src/test/java folder only ,it will pick up testcases from there only.
+
+--> if we write any testcases in the src/main/java , it will not be pick up by maven.
+we can have other utilities,functions in this folder.it's only for business login we can define there.
+
+1)You are calling the mvn executable, which means you need Maven installed on your machine.
+2)You are using the clean command, which will delete all previously compiled Java .
+
+--> mvn clean install tells Maven to do the clean phase in each module
+  before running the install phase for each module.
+  What this does is clear any compiled files you have,
+  making sure that you're really compiling each module from scratch.
+
+1)When should I use Mvn clean install?
+ANS::Use clean when you want to build your projects from scratch.
+ If your build does not take a lot of time use clean every time you are running build.
+ Otherwise it is up to you. Surely do it if you are not sure that everything is indeed.
+
+ 2)mvn test ::To run test cases from testng.xml file ,when we dont have any
+ changes in the project , we dont have to do all the time mvn clean install,
+ we can do mvn test only and it will run all our testscases.
+
+3) If we have multiple xml file we can execute file in the surefile plugin
+
+4)command ::mvn clean install -DskipTests=true
+This command use to skip testcases and build it quickly,mosty deveopers are using this
+ one without excute any testcases, build it and generate the jar file.
+ we can see there is SNAPSHOT.jar file.
+
+ 5)assembly plugins : use to create jar/fat
+
+ 6) target : whenever we run mvn clean install ,it will generate new .jar artifact in the target.
+
+ --> pom.xml ::
+ -----------------
+ is the heart of the maven.
+
+ POM stands for "Project Object Model".
+ It is an XML representation of a Maven project held in a file named pom. xml
+
+ -->What is a POM XML?
+
+ A Project Object Model or POM is the fundamental unit of work in Maven.
+  It is an XML file that contains information about the project and
+  configuration details used by Maven to build the project.
+  It contains default values for most projects.
