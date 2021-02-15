@@ -7,4 +7,9 @@ public class Paritaa {
         WebDriver driver;
         driver= new ChromeDriver();
     }
+
+    public void main(){
+        System.out.println("sonu");
+        System.out.println("patelg");
+    }
 }
